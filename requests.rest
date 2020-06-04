@@ -1,0 +1,29 @@
+GET http://localhost:3333/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRmF0aW1hIiwiaWF0IjoxNTkwNjEzOTA3LCJleHAiOjE1OTA2MTM5NDB9.eDRJTrBSeWqwyfKhfQ7-YLxiqcBaIwUAxNr3gT10l3M
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRmF0aW1hIiwiaWF0IjoxNTkwNjE1NjYzLCJleHAiOjE1OTA2MTU2OTZ9.S-hsWc5jyJViZQ9ckNbovVx1j1mCcVr9B1L_spH3Mxs"
+}
+
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRmF0aW1hIiwiaWF0IjoxNTkwNjE1NjQ5fQ.OvkIS3qCjiLSyFVrZ5nxmtd2UkRcra5EHUdTft0fQGs"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Fatima"
+}
